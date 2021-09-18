@@ -1,0 +1,136 @@
+.card {
+  display: flex;
+  width: 419px;
+  flex-direction: row;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  @media (max-width: $mobile-landscape) {
+    padding: 32px 0;
+    border-top: var(--black) solid 1px;
+    border-bottom: var(--black) solid 1px;
+  }
+}
+
+.cover {
+  width: 120px;
+  padding-right: 31px;
+}
+
+/* .cover:nth-child(odd) {
+  display: none;
+} */
+
+.info {
+  display: flex;
+  width: 269px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dateInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.bodyText {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.date {
+  padding: 0;
+  margin: 0;
+  margin-right: 44px;
+
+  @media (max-width: $mobile-landscape) {
+    margin-right: 46px;
+  }
+}
+
+.time {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  margin-top: 16px;
+}
+
+.h5 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0 0 30px;
+
+  @media (max-width: $mobile-landscape) {
+    margin-left: 0;
+  }
+}
+
+.creditsEntry {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  width: 150px;
+  padding-top: 20px;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: 300px;
+  line-height: 17px;
+}
+
+.button {
+  display: flex;
+  width: 154px;
+  height: 31px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  border: none;
+  border-bottom: var(--black) solid 1px;
+  border-left: var(--black) solid 1px;
+  background-color: var(--white);
+  outline: none;
+
+  @media (max-width: $mobile-landscape) {
+    align-self: baseline;
+  }
+}
+
+.button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.buttonName {
+  padding: 0;
+  margin: 0;
+  line-height: 14px;
+}
+
+.buttonIcon {
+  width: 20px;
+  margin-right: 9px;
+}
+
+.button:hover .buttonIcon > path {
+  fill: var(--white);
+}
+
+.smalltext {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
