@@ -17,6 +17,7 @@ const Home: NextPage = () => (
       callToActionDownload="Скачать пьесу"
     />
     <CardPlayAnnounced
+      festival={false}
       date="15 сентября"
       time="11:00"
       title="Вот Иф"
@@ -25,6 +26,18 @@ const Home: NextPage = () => (
       creditsTypeTwo="Режиссёр:"
       creditsNameTwo="Катя Ганюшина"
       buttonName="О спектакле"
+    />
+    <CardPlayAnnounced
+      festival={true}
+      time="13:00"
+      location="Площадка «8/3»"
+      title="Камино норте"
+      synopsis="(Не)деликатная пьеса о психоневрологическом интернате"
+      creditsTypeOne="Драматург:"
+      creditsNameOne="Ольга Казакова"
+      creditsTypeTwo="Режиссёр:"
+      creditsNameTwo="Катя Ганюшина"
+      buttonName="Регистрация"
     />
   </>
 );

@@ -7,10 +7,6 @@ import ButtonIconDownload from './images/arrow-download.svg';
 import styles from './CardPlayBasic.module.css';
 
 interface ICardPlayBasicProps {
-  backgroundColor?: string;
-  size?: 's' | 'm' | 'l';
-  height?: number;
-  width?: number;
   title: string;
   authorFirstName: string;
   authorLastName: string;
@@ -55,8 +51,10 @@ export const CardPlayBasic: FC<ICardPlayBasicProps> = (props) => {
         </div>
       </div>
       <div className={cn(styles.info)}>
-        <div className={cn(styles.h7, styles.author)}>{authorFirstName || 'Иван'}</div>
-        <div className={cn(styles.h7, styles.author)}>{authorLastName || 'Иванов'}</div>
+        <div className={cn(styles.author)}>
+          <div className={cn(styles.h7)}>{authorFirstName || 'Иван'}</div>
+          <div className={cn(styles.h7)}>{authorLastName || 'Иванов'}</div>
+        </div>
         <div className={cn(styles.smalltext, styles.city)}>{city || 'Москва'}</div>
         <div className={cn(styles.smalltext, styles.year)}>{year || '2021'}</div>
       </div>

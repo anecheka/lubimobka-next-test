@@ -1,8 +1,9 @@
-.card {
+.cardEvents {
   display: flex;
   width: 419px;
   flex-direction: row;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Formular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  list-style-type: none;
 
   @media (max-width: $mobile-landscape) {
     padding: 32px 0;
@@ -11,16 +12,17 @@
   }
 }
 
-.cover {
+.coverEvents {
   width: 120px;
   padding-right: 31px;
+  object-fit: cover;
 }
 
-/* .cover:nth-child(odd) {
+.coverEvents:nth-child(odd) {
   display: none;
-} */
+}
 
-.info {
+.infoEvents {
   display: flex;
   width: 269px;
   flex-direction: column;
@@ -48,19 +50,25 @@
   }
 }
 
-.time {
+.timeEvents {
   padding: 0;
   margin: 0;
 }
 
 .title {
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .h5 {
   font-size: 36px;
   font-weight: 400;
   line-height: 38px;
+}
+
+.h6 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 .credits {
@@ -104,7 +112,7 @@
   outline: none;
 
   @media (max-width: $mobile-landscape) {
-    align-self: baseline;
+    margin-left: -151px;
   }
 }
 
@@ -133,4 +141,107 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+}
+
+.cardFestival {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: row;
+  border-top: var(--black) solid 1px;
+  font-family: 'Formular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  list-style-type: none;
+
+  @media (max-width: $tablet-landscape) {
+    position: relative;
+    max-width: 414px;
+    flex-direction: column;
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+}
+
+.coverFestival {
+  width: 151px;
+  padding-right: 28px;
+  object-fit: cover;
+
+  @media (max-width: $tablet-landscape) {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    width: 127px;
+    padding: 0;
+  }
+}
+
+.timeFestival {
+  padding-top: 16px;
+  margin: 0;
+
+  @media (max-width: $tablet-landscape) {
+    padding-top: 20px;
+  }
+}
+
+.location {
+  padding-top: 16px;
+  margin: 0;
+
+  @media (max-width: $tablet-landscape) {
+    padding-top: 0;
+  }
+}
+
+.infoFestival {
+  display: flex;
+  max-width: 150px;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
+.infoPlay {
+  max-width: 329px;
+  padding-right: 32px;
+
+  @media (max-width: $tablet-landscape) {
+    max-width: 381px;
+  }
+}
+
+.titleFestival {
+  padding-top: 16px;
+
+  @media (max-width: $tablet-landscape) {
+    padding-top: 111px;
+  }
+}
+
+.synopsis {
+  padding-top: 16px;
+  margin: 0;
+
+  @media (max-width: $tablet-landscape) {
+    margin-left: 64px;
+  }
+}
+
+.creditsFestival {
+  display: flex;
+  max-width: 229px;
+  flex-direction: column;
+  padding-top: 67px;
+  padding-right: 26px;
+
+  @media (max-width: $tablet-landscape) {
+    padding-top: 24px;
+  }
+}
+
+.buttonFestival {
+  margin-top: 67px;
+
+  @media (max-width: $tablet-landscape) {
+    margin-top: 16px;
+    margin-left: 216px;
+  }
 }
